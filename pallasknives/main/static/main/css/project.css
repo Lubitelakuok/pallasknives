@@ -1,0 +1,86 @@
+/*.centered-image {*/
+/*    display: block;*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*  }*/
+/*  */
+/*.center-container {*/
+/*    text-align: center;*/
+/*  }*/
+/*.fontz{*/
+/*    margin-left: 35px;*/
+/*    margin-right: 35px;*/
+/*    margin-right: 35px;*/
+/*    font-size: 20px;*/
+/*  }*/
+/*.h1{*/
+/*    margin-left: 70px;*/
+/*    margin-right: 70px;*/
+/*    font-size: 35px;*/
+/*  }*/
+@font-face {
+    font-family: 'Name3';
+    src: url("RopaMixPro-MediumItalic.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+@font-face {
+    font-family: 'Name2';
+    src: url("AeroMatics-Bold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Name4';
+    src: url("Podkova-Bold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+h1{font-size: 40px;}
+.text-center{font-family: "Name3";}
+h3{font-size:40px;font-family: "Name3"; text-align: center; text-shadow: 0.1em 0.1em 0.1em gray; color: white;}
+.btn-custom-pink {
+    color: #fff; /* Белый цвет текста */
+    background-color: #ff69b4; /* Розовый цвет фона */
+    border-color: #ff69b4; /* Розовый цвет границы */
+}
+
+.btn-custom-pink:hover {
+    color: #fff; /* Белый цвет текста при наведении */
+    background-color: #d9534f; /* Темно-розовый цвет фона при наведении */
+    border-color: #d9534f; /* Темно-розовый цвет границы при наведении */
+}
+.btn-custom-turquoise {
+    color: #fff; /* Белый цвет текста */
+    background-color: #30d5c8; /* бирюзовый цвет фона */
+    border-color: #30d5c8; /* бирюзовый цвет границы */
+}
+
+.btn-custom-turquoise:hover {
+    color: #fff; /* Белый цвет текста при наведении */
+    background-color: #1b8780; /* Темно-бирюзовый цвет фона при наведении */
+    border-color: #1b8780; /* Темно-бирюзовый цвет границы при наведении */
+}
+table {width: 100%;border-collapse: collapse;margin-bottom: 20px;}
+td {border: 1px solid #ddd;padding: 8px;text-align: left; }
+th{border: 1px solid #ddd;padding: 8px;text-align: left; }
+th {background-color: #f2f2f2;}
+.container {
+  text-align: center;
+}
+
+.styled-button {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.styled-button:hover {
+  background-color: #45a049;
+}

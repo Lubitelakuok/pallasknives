@@ -1,0 +1,17 @@
+{% extends 'main/base.html' %}
+{%  load static %}
+{% block title %}
+{{ title }}
+{% endblock %}
+{% block content %}
+<body>
+    <link rel="stylesheet" href="{% static 'main/css/success.css' %}">
+    <div class="container">
+        <div class="confirmation-message">
+            <h2>Ваша заявка отправлена</h2>
+            <p>Ожидайте сообщения на электронную почту, указанную в заявке </p>
+        </div>
+        <a href="{% url 'home' %}" class="back-to-home">Вернуться на главную страницу</a>
+    </div>
+</body>
+{% endblock %}

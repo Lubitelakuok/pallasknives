@@ -1,0 +1,15 @@
+{% extends 'main/base.html' %}
+{%  load static %}
+{% block title %}Заявка
+{% endblock %}
+{% block content %}<body>
+    <link rel="stylesheet" href="/static/main/css/application.css">
+    <div class="container"><form method="post" action="{% url 'application' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Отправить</button>
+    </form>
+    </div>
+</body>
+
+{% endblock %}

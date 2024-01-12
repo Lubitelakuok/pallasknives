@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Name3';
+  src: url("RopaMixPro-MediumItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Name2';
+  src: url("AeroMatics-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Name4';
+  src: url("Podkova-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+.zagolovok{background-image: url( "img/fon3.jpg");background-repeat: no-repeat; background-size: cover;}
+h2{font-size:20px;font-family: "Name2"; text-align: center;}
+h3{font-size:40px;font-family: "Name3"; text-align: left; text-shadow: 0.1em 0.1em 0.1em gray; color: white;}
+h1{font-size:70px;text-align: center;font-family: "Name3"; text-shadow: 0.1em 0.1em 0.1em gray; color: white;}
+.row{text-align: center;}
+li{font-size: 30px; font-family: "Berlin Sans FB"}
+p{font-size: 25px;font-family: "Name4"}
+.col-lg-3{margin-left: 200px;}
+.p2{font-size: 20px;font-family: "Name4"}
+h4{font-size: 40px; font-family: "Name4"}
+
+

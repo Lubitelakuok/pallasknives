@@ -1,0 +1,29 @@
+
+.bg-dark{height: 600px;background-image: url( "img/FON.jpg");background-repeat: no-repeat; background-size: 100% 100%;
+}
+@font-face {
+  font-family: 'Name';
+  src: url("ac-mountain.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Name2';
+  src: url("AeroMatics-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Name4';
+  src: url("Podkova-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+.name{font-size:90px;}
+.col-lg-4{text-align: center;}
+h1{ font-family:"Name";}
+h2{font-size:50px;font-family: "Name2"; text-align: center;}
+.konstr{background-color: lightsteelblue;}
+p{font-family:"Name4";font-size:30px;}
+a{color: black;}
+.abzat{margin-left: 30px;}

@@ -1,0 +1,113 @@
+{% extends 'main/base.html' %}
+{%  load static %}
+{% block title %}
+{{ title }}
+{% endblock %}
+{% block content %}
+<h1 class="text-center">Добро пожаловать в наш интерактивный каталог ножей!</h1>
+<p class="text-center" style="font-size: 30px;">Выберите рукоять, форму клинка и цвет и посмотрите, как будет выглядеть ваш нож</p>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="{% static 'main/css/project.css' %}">
+   <table>
+        <thead>
+            <tr>
+                <th ><div class="col-md-8 offset-md-2">
+            <div class="container" >
+                {% for x in video %}
+                <h3 class="text-center mt-2 mb-2"></h3>
+                <video id="myVideo" width="100%" height="auto" controls autoplay loop>
+                    <source src="{{x.video.url}}" type="video/mp4">
+                </video>
+                {% endfor %}
+            </div>
+        </div></th>
+
+                <th><div class="col-md-6 offset-md-2 mt-3" >
+                    <p>Рукоять 1</p>
+                <p>Форма клинка</p>
+                <button onclick="changeVideo('{% static 'main/KlinokWharncliffe.mp4' %}')">Wharncliffe</button>
+                    </div>
+                    <div class="col-md-6 offset-md-2 mt-3" >
+                <p>Цвет</p>
+                <button class="btn btn-primary" onclick="changeVideo('{% static 'main/BlueKnife1.mp4' %}')">Синий</button>
+                <button class="btn btn-warning" onclick="changeVideo('{% static 'main/YellowKnife1.mp4' %}')">Желтый</button>
+                <button class="btn btn-custom-turquoise" onclick="changeVideo('{% static 'main/MarineKnife1.mp4' %}')">Бирюзовый</button>
+                <button class="btn btn-custom-pink" onclick="changeVideo('{% static 'main/PinkKnife1.mp4' %}')">Розовый</button>
+                        </div> <div class="col-md-6 offset-md-2 mt-3" >
+                <p>Форма клинка</p>
+                <button onclick="changeVideo('{% static 'main/KlinokDropPoint.mp4' %}')">DropPoint</button>
+                    </div> <div class="col-md-6 offset-md-2 mt-3" >
+                <p>Цвет</p>
+                <button class="btn btn-primary" onclick="changeVideo('{% static 'main/BlueKnife2.mp4' %}')">Синий</button>
+                <button class="btn btn-warning" onclick="changeVideo('{% static 'main/YellowKnife2.mp4' %}')">Желтый</button>
+                <button class="btn btn-custom-turquoise" onclick="changeVideo('{% static 'main/MarineKnife2.mp4' %}')">Бирюзовый</button>
+                <button class="btn btn-custom-pink" onclick="changeVideo('{% static 'main/PinkKnife2.mp4' %}')">Розовый</button>
+        </div>
+                <div class="col-md-6 offset-md-2 mt-3" >
+                <p>Форма клинка</p>
+                <button onclick="changeVideo('{% static 'main/KlinokTanto.mp4' %}')">Tanto</button></div>
+                <div class="col-md-6 offset-md-2 mt-3" ><p>Цвет</p>
+                <button class="btn btn-primary" onclick="changeVideo('{% static 'main/BlueKnife3.mp4' %}')">Синий</button>
+                <button class="btn btn-warning" onclick="changeVideo('{% static 'main/YellowKnife3.mp4' %}')">Желтый</button>
+                <button class="btn btn-custom-turquoise" onclick="changeVideo('{% static 'main/MarineKnife3.mp4' %}')">Бирюзовый</button>
+                <button class="btn btn-custom-pink" onclick="changeVideo('{% static 'main/PinkKnife3.mp4' %}')">Розовый</button>
+        </div></th>
+                <th><div class="col-md-6 offset-md-2 mt-3" >
+                    <p>Рукоять 2</p>
+                    <p>Форма клинка</p>
+                <button onclick="changeVideo('{% static 'main/Knife11.mp4' %}')">Wharncliffe</button></div>
+                <div class="col-md-6 offset-md-2 mt-3" ><p>Цвет</p>
+                <button class="btn btn-primary" onclick="changeVideo('{% static 'main/BlueKnife1.1.mp4' %}')">Синий</button>
+                <button class="btn btn-warning" onclick="changeVideo('{% static 'main/YellowKnife11.mp4' %}')">Желтый</button>
+                <button class="btn btn-custom-turquoise" onclick="changeVideo('{% static 'main/MarineKnife11.mp4' %}')">Бирюзовый</button>
+                <button class="btn btn-custom-pink" onclick="changeVideo('{% static 'main/PinkKnife11.mp4' %}')">Розовый</button>
+                </div><div class="col-md-6 offset-md-2 mt-3" ><p>Форма клинка</p></div><div class="col-md-6 offset-md-2 mt-3" >
+                <button onclick="changeVideo('{% static 'main/Knife21.mp4' %}')">DropPoint</button>
+                </div><div class="col-md-6 offset-md-2 mt-3" ><p>Цвет</p></div>
+                    <div class="col-md-6 offset-md-2 mt-3" >
+                <button class="btn btn-primary" onclick="changeVideo('{% static 'main/BlueKnife22.mp4' %}')">Синий</button>
+                <button class="btn btn-warning" onclick="changeVideo('{% static 'main/YellowKnife24.mp4' %}')">Желтый</button>
+                <button class="btn btn-custom-turquoise" onclick="changeVideo('{% static 'main/MarineKnife12.mp4' %}')">Бирюзовый</button>
+                <button class="btn btn-custom-pink" onclick="changeVideo('{% static 'main/PinkKnife23.mp4' %}')">Розовый</button>
+        </div>
+                <div class="col-md-6 offset-md-2 mt-3" ><p>Форма клинка</p></div>
+                <div class="col-md-6 offset-md-2 mt-3" ><button onclick="changeVideo('{% static 'main/Knife30.mp4' %}')">Tanto</button></div>
+                <div class="col-md-6 offset-md-2 mt-3" ><p>Цвет</p>
+                <button class="btn btn-primary" onclick="changeVideo('{% static 'main/BlueKnife32.mp4' %}')">Синий</button>
+                <button class="btn btn-warning" onclick="changeVideo('{% static 'main/KnifeYellow33.mp4' %}')">Желтый</button>
+                <button class="btn btn-custom-turquoise" onclick="changeVideo('{% static 'main/KnifeMarine34.mp4' %}')">Бирюзовый</button>
+                <button class="btn btn-custom-pink" onclick="changeVideo('{% static 'main/PinkKnife31.mp4' %}')">Розовый</button>
+        </div>
+
+                </th>
+            </tr>
+        </thead>
+
+    </table>
+
+<script>
+    // Получение элементов видео и источника видео
+    var video = document.getElementById("myVideo");
+
+    // Функция для воспроизведения или паузы видео
+    function playPause() {
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    }
+
+    // Функция для смены видео
+    function changeVideo(newVideoSource) {
+        video.src = newVideoSource;  // Прямо изменяем атрибут src элемента video
+        video.load();  // Перезагрузка видео для применения нового источника
+        video.play();
+    }
+</script>
+<div class="container mt-5">
+    <a class="styled-button" href="{% url 'application' %}">Создать заявку</a>
+</div>
+{% endblock %}
+

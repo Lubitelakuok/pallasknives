@@ -1,0 +1,29 @@
+{% extends 'main/base.html' %}
+{%  load static %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/project.css' %}">
+
+<h1 class="h1">Наш первый нож</h1>
+<div class="fontz">
+  <p>нашим первым складным ножом является модель katt, которая станет для вас незаменимым инструментом на каждый день, пользоваться которым будет одно удовольствие вне зависимости от исполнения.</p>
+</div>
+
+
+ <div class="centered-image">
+  <div class="center-container">
+    <img src="{% static 'main/css/img/exa.jpg' %}" height="500" width="500">
+  </div>
+ </div>
+
+ <h1 class="h1">Универсальность</h1>
+<div class="fontz">
+<p>Каждый может выбрать модификацию модели katt под себя! доступны версии с профилями клинков Wharncliffe и Droppoint:</p>
+<p>Разные материалы, их цвета, текстуру и формы:</p>
+</div>
+
+{% endblock %}
+

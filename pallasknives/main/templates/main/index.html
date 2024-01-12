@@ -1,0 +1,19 @@
+{% extends 'main/base.html' %}
+{%  load static %}
+{% block title %}
+{{ title }}
+{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+<div class="contener1">
+    <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="name">PallasKnives</h1><img src="{% static 'main/css/img/lapka.png' %}" alt="Лапа" height="10%" width="10%">
+      <p class="lead my-3">Мир Pallasknives – место, где искусство встречается с функциональностью. Вдохновленные величественностью и независимостью диких котов Азии мы создаем уникальные складные ножи с индивидуальным дизайном, каждый из которых является произведением искусства.  </p>
+      <p class="lead mb-0"><a href="{% url 'about' %}" class="text-white font-weight-bold" >Узнать больше</a></p>
+    </div>
+  </div>
+    </div>
+<p class="abzat"> Изучите наш уникальный подход к созданию моделей в нашем <a href="{% url 'project' %}">интерактивном каталоге</a>. Мы тщательно разрабатываем формы клинков и подбираем цвета для каждой модели, стремясь создать нож, который подарит владельцу максимальное удовольствие.</p>
+
+{% endblock %}
